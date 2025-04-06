@@ -1,0 +1,82 @@
+{
+  "name": "keepit",
+  "version": "0.0.1",
+  "description": "KeepIt is a minimalist Discord bot that lets you bookmark messages with one click. Categorize, tag, and manage saved messages straight from your DMs.",
+  "main": "dist/index.js",
+  "type": "commonjs",
+  "scripts": {
+    "build": "tsc",
+    "prestart": "npm run build",
+    "start": "node -r tsconfig-paths/register dist/index.js",
+    "dev": "tsc --watch",
+    "lint": "eslint . --ext .ts,.js"
+  },
+  "keywords": [
+    "KeepIt",
+    "bookmark",
+    "save-messages",
+    "message-bookmarking",
+    "dm-management",
+    "organize",
+    "tags",
+    "categories",
+    "discord-bot",
+    "minimalist",
+    "context-command",
+    "interaction",
+    "user-friendly",
+    "personal-notes",
+    "private-storage",
+    "clean-ui",
+    "quick-access",
+    "message-saver",
+    "discord-utility",
+    "productivity"
+  ],
+  "author": {
+    "name": "Striatp",
+    "email": "striatp@outlook.com",
+    "url": "https://github.com/striatp"
+  },
+  "contributors": [],
+  "license": "CC BY-NC-ND 4.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RaviumLabs/KeepIt.git"
+  },
+  "bugs": {
+    "url": "https://github.com/RaviumLabs/KeepIt/issues"
+  },
+  "homepage": "https://ravium.org/keepit",
+  "exports": {
+    "import": "./dist/index.js",
+    "require": "./dist/index.js"
+  },
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/Ravium"
+  },
+  "engines": {
+    "node": ">=23.10.0"
+  },
+  "engineStrict": true,
+  "devDependencies": {
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.8.2",
+    "eslint": "^8.50.0"
+  },
+  "dependencies": {
+    "@tryforge/forge.api": "^1.0.1",
+    "@tryforge/forge.canvas": "github:tryforge/ForgeCanvas#dev",
+    "@tryforge/forge.db": "github:tryforge/ForgeDB#dev",
+    "@tryforge/forgescript": "github:tryforge/ForgeScript#dev",
+    "dotenv": "^16.4.7",
+    "path": "^0.12.7",
+    "sqlite3": "^5.1.7"
+  },
+  "pnpm": {
+    "ignoredBuiltDependencies": [
+      "sqlite3"
+    ]
+  }
+}

@@ -1,0 +1,35 @@
+# Node.js dependencies
+/node_modules/
+package-lock.json
+yarn.lock
+
+# Build output
+#dist/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Logs & debugging
+npm-debug.log*
+yarn-debug.log*
+pnpm-lock.yaml*
+*.log
+
+# Environment variables
+.env
+
+# Development-related folders
+/Archives/
+/Storage/
+
+# Database files
+forge.db
+*.db
+/database/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# VSCode settings (optional)
+.vscode/
