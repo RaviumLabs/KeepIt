@@ -48,7 +48,7 @@ This project is licensed under the [Creative Commons Attribution-NonCommercial-N
 © 2025 Sébastien  
 You may view and fork this project for non-commercial purposes only. Redistribution, modification, or use in commercial projects is not permitted.
 
-See the [LICENSE](./LICENSE) file for full terms.
+See the [LICENSE](./LICENSE.md) file for full terms.
 
 ---
 
