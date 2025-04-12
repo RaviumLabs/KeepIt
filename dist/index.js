@@ -36,17 +36,9 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const forgescript_1 = require("@tryforge/forgescript");
 const forge_db_1 = require("@tryforge/forge.db");
 const forge_canvas_1 = require("@tryforge/forge.canvas");
-const forge_api_1 = require("@tryforge/forge.api");
 const dotenv = __importStar(require("dotenv"));
 const path_1 = require("path");
 dotenv.config();
-const API = new forge_api_1.ForgeAPI({
-    port: 3000,
-    logLevel: 0,
-    auth: {
-        type: 0,
-    },
-});
 const client = new forgescript_1.ForgeClient({
     intents: [
         'Guilds',
@@ -56,21 +48,18 @@ const client = new forgescript_1.ForgeClient({
     events: [
         'debug',
         'error',
-        'interactionCreate',
         'messageCreate',
+        'interactionCreate',
         'ready',
         'shardDisconnect',
         'shardReady',
         'shardError',
         'shardReconnecting',
         'shardResume',
-        'roleDelete',
-        'channelDelete'
     ],
     extensions: [
         new forge_db_1.ForgeDB(),
         new forge_canvas_1.ForgeCanvas(),
-        API
     ],
     prefixes: [
         '.'
@@ -79,7 +68,6 @@ const client = new forgescript_1.ForgeClient({
 client.functions.load((0, path_1.join)(__dirname, 'Functions'));
 client.commands.load('./dist/Commands');
 client.applicationCommands.load('./dist/App');
-API.router.load("./dist/Routes");
 const token = process.env.DISCORD_TOKEN || '';
 if (token) {
     client.login(token);

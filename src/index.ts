@@ -10,15 +10,15 @@ import { join } from 'path';
 dotenv.config();
 
 // ForgeAPI
-const API = new ForgeAPI({
-    port: 3000,
-    logLevel: 0,
-    auth: {
-      type: 0,
-    },
-});
+// const API = new ForgeAPI({
+//     port: 3000,
+//     logLevel: 0,
+//     auth: {
+//       type: 0,
+//     },
+// });
 
-// Define the client configuration
+// Client configuration
 const client: ForgeClient = new ForgeClient({
     // Intents
     intents: [
@@ -30,22 +30,20 @@ const client: ForgeClient = new ForgeClient({
     events: [
         'debug',
         'error',
-        'interactionCreate',
         'messageCreate',
+        'interactionCreate',
         'ready',
         'shardDisconnect',
         'shardReady',
         'shardError',
         'shardReconnecting',
         'shardResume',
-        'roleDelete',
-        'channelDelete'
     ],
     // Extensions
     extensions: [
         new ForgeDB(),
         new ForgeCanvas(),
-        API
+        // API // View line 13
     ],
     // Prefix
     prefixes: [
@@ -59,7 +57,7 @@ client.commands.load('./dist/Commands');
 client.applicationCommands.load('./dist/App');
 
 // API routes loader
-API.router.load("./dist/Routes");
+// API.router.load("./dist/Routes");
 
 // Client login
 const token: string = process.env.DISCORD_TOKEN || '';

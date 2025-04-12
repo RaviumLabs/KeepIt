@@ -1,0 +1,19 @@
+$let[MessageContent;$getMessage[$channelID;$option[message];content]]
+$let[MessageAttachments;$getMessage[$channelID;$option[message];attachments]]
+
+$let[HasEmbeds;$hasEmbeds[$channelID;$option[message]]]
+$if[$get[HasEmbeds]==true;$let[Embeds;$getEmbeds[$channelID;$option[message]]]]
+
+$sendMessage[$dmChannelID;
+    $get[Message]
+    $loadEmbeds[$get[Embeds]]
+    $get[MessageAttachments]
+]
+
+$interactionReply[
+    $ephemeral
+    $defer
+
+    $description[$checkmark The message has been bookmarked!]
+    $color[${configuration.colors.success}]
+]
