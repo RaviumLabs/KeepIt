@@ -1,42 +1,61 @@
-### **Privacy Policy for Pixxle**  
+## 🔐 KeepIt — Privacy Policy
 
-**Effective Date:** April 1, 2025  
-**Last Updated:** April 1, 2025  
+**Last Updated:** April 12, 2025  
+**Bot Name:** KeepIt  
+**Developer:** Striatp  
 
-Thank you for using **Pixxle**! Your privacy is important to us. This Privacy Policy explains what data our bot collects, how it is used, and your rights regarding your information.  
+---
 
-### **1. Information We Collect**  
-Pixxle **does not** collect or store any personal data unless explicitly stated. However, the bot may temporarily process certain types of data to function properly, such as:  
+### 1. What Data We Collect
 
-- **User IDs & Server IDs:** Used to manage bot functionalities within a server.  
-- **Messages & Commands:** The bot may read messages **only when necessary** to execute a command but does not store them.  
-- **Server Settings & Preferences:** If the bot allows customization, it may store configuration settings related to the server.  
+KeepIt does **not** collect or store any of the following:
+- ❌ User IDs  
+- ❌ Message content  
+- ❌ Server or channel data  
+- ❌ Persistent logs or analytics  
 
-### **2. How We Use Your Information**  
-Any data collected is used **solely to operate and improve the bot’s functionality**. We do **not** sell, share, or use your data for marketing purposes. The bot may use data for:  
-- Executing commands and responding to user interactions.  
-- Storing user/server preferences (if applicable).  
-- Logging bot-related errors to improve performance.  
+All actions are **temporary** and handled in real time, with no data stored after execution.
 
-### **3. Data Storage & Security**  
-- We **do not** store user messages, commands, or private information.  
-- Any temporary data is stored securely and removed when no longer needed.  
-- If the bot provides any cloud-based storage (e.g., logging, settings), we ensure it is protected from unauthorized access.  
+---
 
-### **4. Sharing of Information**  
-We do **not** share, sell, or distribute user data to third parties. However, in rare cases, we may disclose data if required by law enforcement with a valid request.  
+### 2. Use of Direct Messages
 
-### **5. User Rights & Data Removal**  
-You have the right to:  
-- Request deletion of any stored server settings or configurations.  
-- Stop using the bot at any time, which automatically removes any temporary data.  
+KeepIt uses **DMs** to deliver bookmarked messages. If DMs are disabled:
+- An error will be returned.
+- No data will be saved or stored.
 
-If you wish to request data removal or have any concerns, please contact me on Discord:  
-📧 **@striatp**  
+---
 
-### **6. Changes to This Policy**  
-We may update this Privacy Policy from time to time. We will notify users of any major changes. Continued use of the bot after updates means you accept the revised policy.  
+### 3. No Database Storage
 
-### **7. Contact Us**  
-If you have any questions about this Privacy Policy, you can reach out to:  
-📧 **Discord: @striatp**  
+There is **no backend database**. All message bookmarking is session-based and does not persist.
+
+---
+
+### 4. No Third-Party Sharing
+
+KeepIt does **not** interact with any third-party APIs. Your information is never shared.
+
+---
+
+### 5. Security
+
+The bot operates within Discord’s permissions framework. Always ensure the bot has only the necessary permissions in your server.
+
+---
+
+### 6. Changes to This Policy
+
+This privacy policy may change. The most recent version will always be made available.
+
+---
+
+### Contact
+
+Questions or issues? Message `Striatp` on Discord.
+
+---
+
+### © Copyright
+
+KeepIt is a private, minimalist bot. We don’t store your data — because we don’t need to.

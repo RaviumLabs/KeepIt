@@ -1,45 +1,49 @@
-# **Terms of Service for Pixxle**
+## 📄 KeepIt — Terms of Service
 
-**Effective Date:** April 1, 2025
-**Last Updated:** April 1, 2025
+**Last Updated:** April 12, 2025  
+**Bot Name:** KeepIt  
+**Developer:** Striatp  
 
-Welcome to **Pixxle**! By using this bot, you agree to these Terms of Service. If you do not agree, please stop using the bot immediately.
+---
 
-## **1. Acceptance of Terms**
-By adding or using **Pixxle**, you confirm that you have read, understood, and agreed to these Terms of Service.
+### 1. Acceptance of Terms
 
-## **2. Use of the Bot**
-- **You may use Pixxle only for lawful purposes.**
-- **You must follow Discord’s Terms of Service** ([https://discord.com/terms](https://discord.com/terms)).
-- **You are responsible for your server’s usage of Pixxle.**
-- **You may not exploit, abuse, or attempt to disrupt the bot’s functionality.**
+By using **KeepIt**, you agree to follow these Terms of Service. If you do not agree with any part of these terms, please stop using the bot.
 
-## **3. Restrictions**
-By using Pixxle, you agree **NOT** to:
-- Modify, reverse-engineer, or attempt to copy Pixxle’s code.
-- Use Pixxle for illegal, harmful, or offensive activities.
-- Use Pixxle for commercial purposes without permission.
-- Attempt to overload, crash, or interfere with Pixxle’s services.
+---
 
-## **4. Data & Privacy**
-- Pixxle does **not** collect personal data (see our [Privacy Policy](#)).  
-- The bot may process temporary data for functionality.
-- We do **not** sell, share, or store your personal information.
+### 2. Bot Usage
 
-## **5. Service Availability**
-- Pixxle is provided **as-is**, with no guarantees of uptime or functionality.
-- We may modify, update, or shut down Pixxle at any time without notice.
-- We are **not responsible for any loss or damage** caused by Pixxle’s usage.
+- KeepIt is provided **as-is** with no guarantee of uptime or performance.
+- Misuse of the bot (e.g., spamming commands, abuse) may result in restrictions or blacklisting.
+- We reserve the right to update the bot, commands, and terms at any time.
 
-## **6. Termination & Violations**
-We reserve the right to **deny access** to Pixxle if you:
-- Violate these Terms of Service.
-- Engage in harmful or disruptive activities.
-- Attempt to bypass restrictions or exploit the bot.
+---
 
-## **7. Changes to the Terms**
-We may update these Terms at any time. Continued use of Pixxle after changes means you accept the new terms.
+### 3. Availability
 
-## **8. Contact Information**
-If you have any questions, contact me on Discord:
-📧 **@striatp**
+KeepIt may be taken offline for maintenance or discontinued at any time without prior notice. While we aim for stability, we do not guarantee uninterrupted access.
+
+---
+
+### 4. Limitations
+
+KeepIt is a **stateless, minimalist** bot and is limited to the features explicitly provided. No additional customizations are promised unless otherwise stated.
+
+---
+
+### 5. Disclaimer
+
+KeepIt is not affiliated with Discord. Use it at your own discretion. We are not responsible for any misuse or issues caused by using the bot.
+
+---
+
+### 6. Contact
+
+Have questions? DM `Striatp` on Discord.
+
+---
+
+### © Copyright
+
+KeepIt is a project by **Striatp**. All rights reserved.
