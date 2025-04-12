@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const Command = {
     type: "messageCreate",
-    name: "e",
+    name: "ev",
     code: `
 $onlyIf[$authorID==876801702051856424;]
 $eval[$message]

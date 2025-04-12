@@ -5,6 +5,8 @@ const ApplicationCommand: IApplicationCommandData = {
     data: {
         type: 3,
         name: 'Bookmark with KeepIt',
+        dm_permission: false,
+        default_member_permissions: null
     },
     code: `
 $onlyIf[$getUserCooldownTime[$authorID]==0;$interactionReply[
@@ -56,11 +58,22 @@ $try[
             $let[ID;$sendMessage[$dmChannelID;
                 $title[📌 Bookmarked Message]
                 $description[$get[Message]]
+                $if[$get[MessageAtt]!=;
+                    $arrayLoad[Attachments;//SEP//;$get[MessageAtt]]
+                    $addField[Attachments;$arrayJoin[Attachments;, ]]
+                ]
                 $color[${configuration.colors.main}]
                 $footer[Bookmarked with KeepIt • 🔖]
                 $timestamp[$getMessage[$channelID;$option[message];timestamp]]
-               
-                $interactions
+                
+                $addActionRow
+                $addButton[$get[MessageLink];Jump to message;Link]
+                $addButton[tag;Tags;Secondary;🏷️;true]
+                $addButton[category;Category;Secondary;🗃;true]
+
+                $addActionRow
+                $addButton[delete;Delete;Danger;🗑️]
+                $addButton[details_$channelID_$option[message];Details;Secondary;📄]
             ;true]]
             $interactionReply[
                 $ephemeral

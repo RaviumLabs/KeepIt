@@ -8,7 +8,9 @@ const ApplicationCommand = {
     data: {
         type: 1,
         name: 'help',
-        description: 'Get support resources, community links, and more. Use /guide to learn how to use KeepIt.'
+        description: 'Get support resources, community links, and more. Use /guide to learn how to use KeepIt.',
+        dm_permission: true,
+        default_member_permissions: null
     },
     code: `
 $interactionReply[
