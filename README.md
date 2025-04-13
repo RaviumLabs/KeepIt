@@ -20,10 +20,16 @@
 
 ## Commands
 
-| Command  | Description                             |
-|----------|-----------------------------------------|
-| `/help`  | Provides support and external resources. |
-| `/guide` | Learn how to use the bot step by step.  |
+| Command       | Description                                               |
+|---------------|-----------------------------------------------------------|
+| `/help`       | Provides support and external resources.                  |
+| `/guide`      | Learn how to use the bot step by step.                   |
+| `/bookmark`   | Save a message to your DMs, with optional tags.          |
+| `/delete`     | Delete a saved bookmark.                                 |
+| `/terms`      | View the Terms of Service.                               |
+| `/privacy`    | View the Privacy Policy.                                 |
+| `/status`     | View the bot’s current status, ping, and uptime.         |
+
 
 You can also right-click any message and choose **“Bookmark with KeepIt”**.
 
