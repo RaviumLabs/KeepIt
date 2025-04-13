@@ -47,11 +47,26 @@ $try[
     $let[MessageLink;$messageLink[$channelID;$option[message]]]
 
     $ifx[
-        $if[$and[$get[HasEmbeds]==true;$get[Message]==]==true;
+        $if[$get[HasEmbeds]==true;
+            $let[ID;$sendMessage[$dmChannelID;
+$if[$get[Message]==;📌 **Bookmarked Embed Message**;$get[Message]]
+$if[$get[MessageAtt]!=;Attachment(s): $arrayLoad[Attachments;//SEP//;$get[MessageAtt]]$arrayJoin[Attachments;, ]]
+
+                $loadEmbeds[$getEmbeds[$channelID;$option[message]]]
+
+                $addActionRow
+                $addButton[$get[MessageLink];Jump to message;Link]
+                $addButton[tag;Tags;Secondary;🏷️;true]
+                $addButton[category;Category;Secondary;🗃;true]
+
+                $addActionRow
+                $addButton[delete;Delete;Danger;🗑️]
+                $addButton[details_$channelID_$option[message];Details;Secondary;📄]
+            ;true]]
             $interactionReply[
                 $ephemeral
-                $description[$crossmark KeepIt doesn't support embeds bookmarks yet.]
-                $color[${configuration.colors.error}]
+                $addActionRow
+                $addButton[_;Message bookmarked!;Primary;🔖;true]
             ]
         ]
         $else[
