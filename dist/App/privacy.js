@@ -1,10 +1,13 @@
-import { IApplicationCommandData } from '@tryforge/forgescript';
-import configuration from '@/configuration.json'
-
-const ApplicationCommand: IApplicationCommandData = {
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const configuration_json_1 = __importDefault(require("@/configuration.json"));
+const ApplicationCommand = {
     data: {
         type: 1,
-        name: 'policy',
+        name: 'privacy',
         description: 'View the Privacy Policy for how your data is handled.',
         dm_permission: true,
         default_member_permissions: null
@@ -41,10 +44,10 @@ All actions are temporary and handled in real time, with no data stored after ex
 
     $addField[© Copyright;KeepIt is a private, minimalist bot. We don’t store your data — because we don’t need to.]
 
-    $color[${configuration.colors.main}]
+    $color[${configuration_json_1.default.colors.main}]
     $footer[© 2025 KeepIt by Striatp • All rights reserved;$userAvatar[$botOwnerID]]
 ]
 `,
 };
-
-export default ApplicationCommand;
+exports.default = ApplicationCommand;
+//# sourceMappingURL=privacy.js.map

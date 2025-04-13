@@ -1,5 +1,5 @@
 import { IApplicationCommandData } from '@tryforge/forgescript';
-import configuration from '@/configuration.json'
+import configuration from '@/configuration.json';
 
 const ApplicationCommand: IApplicationCommandData = {
     data: {

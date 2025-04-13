@@ -1,1 +1,1 @@
-{"version":3,"file":"delete.js","sourceRoot":"","sources":["../../../src/Commands/Manage/delete.ts"],"names":[],"mappings":";;AAEA,MAAM,OAAO,GAA8B;IACzC,IAAI,EAAE,mBAAmB;IACzB,IAAI,EAAE;;;;;;;;;;CAUP;CACA,CAAC;AAEF,kBAAe,OAAO,CAAC"}
+{"version":3,"file":"delete.js","sourceRoot":"","sources":["../../../src/Commands/Manage/delete.ts"],"names":[],"mappings":";;AAEA,MAAM,OAAO,GAA8B;IACzC,IAAI,EAAE,mBAAmB;IACzB,IAAI,EAAE;;;;;;;uCAO+B;CACtC,CAAC;AAEF,kBAAe,OAAO,CAAC"}
