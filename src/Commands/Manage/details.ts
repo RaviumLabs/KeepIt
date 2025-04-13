@@ -31,8 +31,6 @@ $interactionReply[
     $addField[Server;\`$guildName[$getMessage[$arrayAt[IDs;1];$arrayAt[IDs;2];guildID]]\` (ID: \`$getMessage[$arrayAt[IDs;1];$arrayAt[IDs;2];guildID]\`)]
     $color[${configuration.colors.main}]
     $footer[© 2025 KeepIt by Striatp • All rights reserved;$userAvatar[$botOwnerID]]
-    
-    $attachment[$getMessage[$arrayAt[IDs;1];$arrayAt[IDs;2];content];content.txt;true]
 ]
 `,
 };

@@ -15,6 +15,7 @@ $onlyIf[$getUserCooldownTime[$authorID]==0;$interactionReply[
     $description[$crossmark You are on cooldown for this command. Please wait **$get[Time]** second$if[$get[Time]>1;s;] before using it again.]
     $color[${configuration.colors.error}]
 ]]
+
 $try[
     $onlyIf[$messageExists[$channelID;$option[message]]==true;$interactionReply[
         $ephemeral
