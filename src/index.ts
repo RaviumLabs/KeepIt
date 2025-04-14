@@ -1,9 +1,7 @@
-// import { config } from './config';
 import { ForgeClient } from '@tryforge/forgescript';
 import { ForgeDB } from '@tryforge/forge.db';
 import { ForgeCanvas } from '@tryforge/forge.canvas';
 import * as dotenv from 'dotenv';
-import { join } from 'path';
 
 // Environment variables
 dotenv.config();
@@ -41,12 +39,9 @@ const client: ForgeClient = new ForgeClient({
 });
 
 // Commands & functions loader
-client.functions.load(join(__dirname, 'Functions'));
+client.functions.load('./dist/Functions');
 client.commands.load('./dist/Commands');
 client.applicationCommands.load('./dist/App');
-
-// API routes loader
-// API.router.load("./dist/Routes");
 
 // Client login
 const token: string = process.env.DISCORD_TOKEN || '';
