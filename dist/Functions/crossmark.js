@@ -1,8 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const Function = {
+const CrossmarkFunction = {
     name: 'crossmark',
     code: `$return[<:crossmark:$findApplicationEmoji[crossmark]>] `
 };
-exports.default = Function;
+exports.default = CrossmarkFunction;
 //# sourceMappingURL=crossmark.js.map

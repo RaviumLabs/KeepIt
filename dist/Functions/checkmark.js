@@ -1,8 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const Function = {
+const CheckmarkFunction = {
     name: 'checkmark',
     code: `$return[<:checkmark:$findApplicationEmoji[checkmark]>]`
 };
-exports.default = Function;
+exports.default = CheckmarkFunction;
 //# sourceMappingURL=checkmark.js.map
