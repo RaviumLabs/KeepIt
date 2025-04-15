@@ -5,9 +5,9 @@ const Command = {
     code: `
 $onlyIf[$customID==delete;]
 $interactionReply[
-    $ephemeral
-    $addActionRow
-    $addButton[_;Bookmark deleted!;Danger;🗑️;true]
+  $ephemeral
+  $addActionRow
+  $addButton[_;Bookmark deleted!;Danger;🗑️;true]
 ]
 $!deleteMessage[$channelID;$messageID]`,
 };
