@@ -4,7 +4,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const configuration_json_1 = __importDefault(require("@/configuration.json"));
-const Command = {
+const Details = {
     type: "interactionCreate",
     code: `
     $c[Ensure the custom ID includes 'details']
@@ -42,5 +42,5 @@ const Command = {
     ]
   `,
 };
-exports.default = Command;
+exports.default = Details;
 //# sourceMappingURL=details.js.map

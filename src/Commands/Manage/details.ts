@@ -2,7 +2,7 @@ import { CommandType, IBaseCommand } from '@tryforge/forgescript';
 import configuration from '@/configuration.json';
 
 // Define the command object
-const Command: IBaseCommand<CommandType> = {
+const Details: IBaseCommand<CommandType> = {
   type: "interactionCreate", // Trigger type for the command
   code: `
     $c[Ensure the custom ID includes 'details']
@@ -41,4 +41,4 @@ const Command: IBaseCommand<CommandType> = {
   `,
 };
 
-export default Command;
+export default Details;
