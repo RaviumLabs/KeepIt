@@ -2,7 +2,7 @@ import { IForgeFunction } from "@tryforge/forgescript";
 
 /**
  * Fetch the 'checkmark' emoji from the app's built-in emojis.
- * @returns - Emoji
+ * @returns - ApplicationEmoji
 */
 const Function: IForgeFunction = {
   name: 'checkmark',

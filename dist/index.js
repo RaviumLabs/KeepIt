@@ -37,7 +37,6 @@ const forgescript_1 = require("@tryforge/forgescript");
 const forge_db_1 = require("@tryforge/forge.db");
 const forge_canvas_1 = require("@tryforge/forge.canvas");
 const dotenv = __importStar(require("dotenv"));
-const path_1 = require("path");
 dotenv.config();
 const client = new forgescript_1.ForgeClient({
     intents: [
@@ -65,7 +64,7 @@ const client = new forgescript_1.ForgeClient({
         '.'
     ]
 });
-client.functions.load((0, path_1.join)(__dirname, 'Functions'));
+client.functions.load('./dist/Functions');
 client.commands.load('./dist/Commands');
 client.applicationCommands.load('./dist/App');
 const token = process.env.DISCORD_TOKEN || '';

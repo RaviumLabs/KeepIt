@@ -1,1 +1,1 @@
-{"version":3,"file":"crossmark.js","sourceRoot":"","sources":["../../src/Functions/crossmark.ts"],"names":[],"mappings":";;AAEA,MAAM,QAAQ,GAAmB;IAC/B,IAAI,EAAE,WAAW;IACjB,IAAI,EAAE,yDAAyD;CAChE,CAAC;AAEF,kBAAe,QAAQ,CAAC"}
+{"version":3,"file":"crossmark.js","sourceRoot":"","sources":["../../src/Functions/crossmark.ts"],"names":[],"mappings":";;AAMA,MAAM,QAAQ,GAAmB;IAC/B,IAAI,EAAE,WAAW;IACjB,IAAI,EAAE,yDAAyD;CAChE,CAAC;AAEF,kBAAe,QAAQ,CAAC"}
