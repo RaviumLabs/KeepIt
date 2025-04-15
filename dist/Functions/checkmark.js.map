@@ -1,1 +1,1 @@
-{"version":3,"file":"checkmark.js","sourceRoot":"","sources":["../../src/Functions/checkmark.ts"],"names":[],"mappings":";;AAMA,MAAM,iBAAiB,GAAmB;IACxC,IAAI,EAAE,WAAW;IACjB,IAAI,EAAE,wDAAwD;CAC/D,CAAC;AAEF,kBAAe,iBAAiB,CAAC"}
+{"version":3,"file":"checkmark.js","sourceRoot":"","sources":["../../src/Functions/checkmark.ts"],"names":[],"mappings":";;AAmBA,MAAM,iBAAiB,GAAmB;IACxC,IAAI,EAAE,WAAW;IACjB,IAAI,EAAE,wDAAwD;CAC/D,CAAC;AAEF,kBAAe,iBAAiB,CAAC"}
