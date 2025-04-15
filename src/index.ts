@@ -7,7 +7,7 @@ import * as dotenv from 'dotenv';
 dotenv.config();
 
 // Client configuration
-const client: ForgeClient = new ForgeClient({
+const Client: ForgeClient = new ForgeClient({
     // Intents
     intents: [
         'Guilds',
@@ -39,14 +39,11 @@ const client: ForgeClient = new ForgeClient({
 });
 
 // Commands & functions loader
-client.functions.load('./dist/Functions');
-client.commands.load('./dist/Commands');
-client.applicationCommands.load('./dist/App');
+Client.functions.load('./dist/Functions');
+Client.commands.load('./dist/Commands');
+Client.applicationCommands.load('./dist/App');
 
-// Client login
+// Token
 const token: string = process.env.DISCORD_TOKEN || '';
-if (token) {
-    client.login(token);
-} else {
-    console.error('Token is missing from environment variables.');
-}
+// Client login
+token ? Client.login(token) : console.error('Token is missing from environment variables.');

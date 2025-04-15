@@ -38,7 +38,7 @@ const forge_db_1 = require("@tryforge/forge.db");
 const forge_canvas_1 = require("@tryforge/forge.canvas");
 const dotenv = __importStar(require("dotenv"));
 dotenv.config();
-const client = new forgescript_1.ForgeClient({
+const Client = new forgescript_1.ForgeClient({
     intents: [
         'Guilds',
         'GuildMessages',
@@ -64,14 +64,9 @@ const client = new forgescript_1.ForgeClient({
         '.'
     ]
 });
-client.functions.load('./dist/Functions');
-client.commands.load('./dist/Commands');
-client.applicationCommands.load('./dist/App');
+Client.functions.load('./dist/Functions');
+Client.commands.load('./dist/Commands');
+Client.applicationCommands.load('./dist/App');
 const token = process.env.DISCORD_TOKEN || '';
-if (token) {
-    client.login(token);
-}
-else {
-    console.error('Token is missing from environment variables.');
-}
+token ? Client.login(token) : console.error('Token is missing from environment variables.');
 //# sourceMappingURL=index.js.map
