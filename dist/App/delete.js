@@ -18,6 +18,12 @@ const Delete = {
 			$color[${configuration_json_1.default.colors.error}]
 		]]
 
+		$onlyIf[$getMessage[$channelID;$option[message];authorID]==$botID;$interactionReply[
+			$ephemeral
+			$description[$crossmark This message is not a bookmark.]
+			$color[${configuration_json_1.default.colors.error}]
+		]]
+
 		$c[Send an ephemeral interaction reply with a button indicating the bookmark was deleted]
 		$interactionReply[
 			$ephemeral
@@ -26,7 +32,15 @@ const Delete = {
 		]
 
 		$c[Delete the message from the channel]
-		$!deleteMessage[$channelID;$option[message]]
+		$try[
+			$!deleteMessage[$channelID;$option[message]]
+		;
+			$interactionReply[
+				$ephemeral
+				$description[$crossmark An unknown error has occured.]
+				$color[${configuration_json_1.default.colors.error}]
+			]
+		]
 `,
 };
 exports.default = Delete;
