@@ -20,10 +20,10 @@ const ApplicationCommand = {
 			$ephemeral
 
 			$title[How to Use KeepIt] $c[Set the title of the guide]
-			$description[KeepIt helps you **save, categorize, and manage Discord messages** — all in your DMs. Here's how to get started.] $c[Set the description of the guide]
+			$description[KeepIt helps you **save, categorize, and manage Discord messages** — all in your DMs. Here's how to get started.]
 			$color[${configuration_json_1.default.colors.main}]
 
-			$addField[Step 1: Find a message;Search for the message you want to save. Make sure it exists.;;1] $c[Add
+			$addField[Step 1: Find a message;Search for the message you want to save. Make sure it exists.;;1]
 			$image[attachment://message.png;1]
 			$color[${configuration_json_1.default.colors.main};1]
 

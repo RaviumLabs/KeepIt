@@ -21,7 +21,7 @@ import configuration from '@/configuration.json';
  * - An ephemeral interaction reply with a title, description, and color.
  * - Step-by-step instructions on how to use KeepIt.
  * - Action buttons for accessing the mobile guide, support, and GitHub links.
- */
+*/
 const ApplicationCommand: IApplicationCommandData = {
 	data: {
 		type: 1,
@@ -38,10 +38,10 @@ const ApplicationCommand: IApplicationCommandData = {
 			$ephemeral
 
 			$title[How to Use KeepIt] $c[Set the title of the guide]
-			$description[KeepIt helps you **save, categorize, and manage Discord messages** — all in your DMs. Here's how to get started.] $c[Set the description of the guide]
+			$description[KeepIt helps you **save, categorize, and manage Discord messages** — all in your DMs. Here's how to get started.]
 			$color[${configuration.colors.main}]
 
-			$addField[Step 1: Find a message;Search for the message you want to save. Make sure it exists.;;1] $c[Add
+			$addField[Step 1: Find a message;Search for the message you want to save. Make sure it exists.;;1]
 			$image[attachment://message.png;1]
 			$color[${configuration.colors.main};1]
 
