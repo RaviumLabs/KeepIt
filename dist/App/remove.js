@@ -12,19 +12,21 @@ const ApplicationCommand = {
         default_member_permissions: null,
     },
     code: `
-$onlyIf[$guildID==;$interactionReply[
-    $ephemeral
-    $description[$crossmark You can only delete bookmarks in private messages.]
-    $color[${configuration_json_1.default.colors.error}]
-]]
+		$onlyIf[$guildID==;$interactionReply[
+			$ephemeral
+			$description[$crossmark You can only delete bookmarks in private messages.]
+			$color[${configuration_json_1.default.colors.error}]
+		]]
 
-$interactionReply[
-    $ephemeral
-    $addActionRow
-    $addButton[_;Bookmark deleted!;Danger;🗑️;true]
-]
+		$c[Send an ephemeral interaction reply with a button indicating the bookmark was deleted]
+		$interactionReply[
+			$ephemeral
+			$addActionRow
+			$addButton[_;Bookmark deleted!;Danger;🗑️;true]
+		]
 
-$!deleteMessage[$channelID;$option[message]]
+		$c[Delete the message from the channel]
+		$!deleteMessage[$channelID;$option[message]]
 `,
 };
 exports.default = ApplicationCommand;
