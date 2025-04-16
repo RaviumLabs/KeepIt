@@ -53,11 +53,8 @@ You can also right-click any message and choose **“Bookmark with KeepIt”**.
 
 To function properly, the bot requires:
 
-- Read Message History  
-- Send Messages  
-- Embed Links  
-- Use Application Commands  
-- Manage Messages *(if applicable for advanced features)*
+- Read Message History
+- Use Application Commands
 
 ---
 
