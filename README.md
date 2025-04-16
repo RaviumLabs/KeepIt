@@ -1,6 +1,6 @@
 # KeepIt — Minimalist Message Bookmarking for Discord
 
-**KeepIt** is a minimalist Discord bot that lets you bookmark messages with a single click. Organize saved content into categories, add custom tags, and access everything directly from your DMs — all through simple and intuitive interactions. Current version: 0.9.3
+**KeepIt** is a minimalist Discord bot that lets you bookmark messages with a single click. Organize saved content into categories, add custom tags, and access everything directly from your DMs — all through simple and intuitive interactions. Current version: 0.9.4
 
 ## Last Changes
 
