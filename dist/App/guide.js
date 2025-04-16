@@ -13,29 +13,31 @@ const ApplicationCommand = {
         default_member_permissions: null
     },
     code: `
-$attachment[assets/guide/Message.png;message.png]
-$attachment[assets/guide/Right_Click.png;right_click.png]
+		$attachment[assets/guide/Message.png;message.png]
+		$attachment[assets/guide/Right_Click.png;right_click.png]
 
-$interactionReply[
-    $ephemeral
+		$interactionReply[
+			$ephemeral
 
-    $title[How to Use KeepIt]
-    $description[KeepIt helps you **save, categorize, and manage Discord messages** — all in your DMs. Here's how to get started.]
-    $color[${configuration_json_1.default.colors.main}]
+			$title[How to Use KeepIt] $c[Set the title of the guide]
+			$description[KeepIt helps you **save, categorize, and manage Discord messages** — all in your DMs. Here's how to get started.] $c[Set the description of the guide]
+			$color[${configuration_json_1.default.colors.main}]
 
-    $addField[Step 1: Find a message;Search for the message you want to save. Make sure it exists.;;1]
-    $image[attachment://message.png;1]
-    $color[${configuration_json_1.default.colors.main};1]
+			$addField[Step 1: Find a message;Search for the message you want to save. Make sure it exists.;;1] $c[Add
+			$image[attachment://message.png;1]
+			$color[${configuration_json_1.default.colors.main};1]
 
-    $addField[Step 2: Right-click the message;Once you found the message you would like to bookmark, right click it and through the **Apps** section, press **Bookmark with KeepIt**.;;2]
-    $image[attachment://right_click.png;2]
-    $color[${configuration_json_1.default.colors.main};2]
+			$addField[Step 2: Right-click the message;Once you found the message you would like to bookmark, right click it and through the **Apps** section, press **Bookmark with KeepIt**.;;2]
+			$image[attachment://right_click.png;2]
+			$color[${configuration_json_1.default.colors.main};2]
 
-    $addActionRow
-      $addButton[mobile_guide;Mobile Guide;Primary;📱]
-      $addButton[${configuration_json_1.default.links.discord};Support;Link]
-      $addButton[${configuration_json_1.default.links.github};Open-source;Link]
-]`,
+			$c[Buttons for more support]
+			$addActionRow
+				$addButton[mobile_guide;Mobile Guide;Primary;📱]
+				$addButton[${configuration_json_1.default.links.discord};Support;Link]
+				$addButton[${configuration_json_1.default.links.github};Open-source;Link]
+		]
+`,
 };
 exports.default = ApplicationCommand;
 //# sourceMappingURL=guide.js.map
