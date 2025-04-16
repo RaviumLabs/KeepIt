@@ -10,7 +10,6 @@ yarn.lock
 *.tsbuildinfo
 
 # Logs & debugging
-npm-debug.log*
 yarn-debug.log*
 pnpm-lock.yaml*
 *.log
