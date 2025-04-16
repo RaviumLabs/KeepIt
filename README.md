@@ -4,6 +4,11 @@
 
 ## Last Changes
 
+### Version 0.9.4
+- Enhanced user experience with cleaner UI and faster response times.
+- Minor bug fixes and performance improvements.
+- Updated documentation for better clarity.
+
 ### Version 0.9.3
 - Added `/status` command to check bot status, ping, and uptime.
 - Improved bookmark management with interaction-based buttons.
