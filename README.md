@@ -56,6 +56,11 @@ To function properly, the bot requires:
 - Read Message History
 - Use Application Commands
 
+## Invite KeepIt to Your Server
+
+Ready to start bookmarking messages?  
+[Click here to invite KeepIt to your server!](https://discord.com/discovery/applications/1358479024699212040)
+
 ---
 
 ## License
