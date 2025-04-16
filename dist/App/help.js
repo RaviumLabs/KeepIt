@@ -4,7 +4,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const configuration_json_1 = __importDefault(require("@/configuration.json"));
-const ApplicationCommand = {
+const Help = {
     data: {
         type: 1,
         name: 'help',
@@ -28,7 +28,7 @@ const ApplicationCommand = {
 			$color[${configuration_json_1.default.colors.main}]
 			
 			$c[Add a footer with copyright information and the bot owner's avatar]
-			$footer[© 2025 KeepIt by Striatp • All rights reserved;$userAvatar[$botOwnerID]]
+			$footer[© ${new Date().getFullYear()} KeepIt by Striatp • All rights reserved;$userAvatar[$botOwnerID]]
 
 			$c[Add an action row with buttons for support and GitHub links]
 			$addActionRow
@@ -37,5 +37,5 @@ const ApplicationCommand = {
 		]
 `,
 };
-exports.default = ApplicationCommand;
+exports.default = Help;
 //# sourceMappingURL=help.js.map

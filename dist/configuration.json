@@ -1,4 +1,5 @@
 {
+    "version": "0.9.3",
     "colors": {
         "main": "#D7FF94",
         "error": "#FF3C65",

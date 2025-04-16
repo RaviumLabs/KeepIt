@@ -24,4 +24,4 @@ const Status = {
 `,
 };
 exports.default = Status;
-//# sourceMappingURL=stastus.js.map
+//# sourceMappingURL=status.js.map

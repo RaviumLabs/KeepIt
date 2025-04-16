@@ -4,7 +4,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const configuration_json_1 = __importDefault(require("@/configuration.json"));
-const ApplicationCommand = {
+const Bookmark = {
     data: {
         type: 3,
         name: 'Bookmark with KeepIt',
@@ -114,5 +114,5 @@ $if[$get[MessageAtt]!=;Attachment(s): $arrayLoad[Attachments;//SEP//;$get[Messag
     ]
 `,
 };
-exports.default = ApplicationCommand;
+exports.default = Bookmark;
 //# sourceMappingURL=bookmark.js.map

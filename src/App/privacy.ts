@@ -28,7 +28,7 @@ import configuration from '@/configuration.json';
  * 
  * The Privacy Policy is displayed in an ephemeral interaction reply, ensuring user privacy.
 */
-const ApplicationCommand: IApplicationCommandData = {
+const Privacy: IApplicationCommandData = {
 	data: {
 		type: 1,
 		name: 'privacy',
@@ -59,9 +59,9 @@ All actions are temporary and handled in real time, with no data stored after ex
 	$addField[Contact;Questions or issues? Message @Striatp on Discord.]
 	$addField[© Copyright;KeepIt is a private, minimalist bot. We don’t store your data — because we don’t need to.]
 	$color[${configuration.colors.main}]
-	$footer[© 2025 KeepIt by Striatp • All rights reserved;$userAvatar[$botOwnerID]]
+	$footer[© ${new Date().getFullYear()} KeepIt by Striatp • All rights reserved;$userAvatar[$botOwnerID]]
 ]
 `,
 };
 
-export default ApplicationCommand;
+export default Privacy;

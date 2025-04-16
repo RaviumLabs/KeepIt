@@ -19,7 +19,7 @@ import configuration from '@/configuration.json';
  * - Sends an ephemeral interaction reply with a button indicating the bookmark was deleted.
  * - Deletes the specified message from the channel.
 */
-const ApplicationCommand: IApplicationCommandData = {
+const Delete: IApplicationCommandData = {
 	data: {
 		type: 3,
 		name: 'Delete Bookmark',
@@ -45,4 +45,4 @@ const ApplicationCommand: IApplicationCommandData = {
 `,
 };
 
-export default ApplicationCommand;
+export default Delete;

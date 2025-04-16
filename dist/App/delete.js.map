@@ -1,0 +1,1 @@
+{"version":3,"file":"delete.js","sourceRoot":"","sources":["../../src/App/delete.ts"],"names":[],"mappings":";;;;;AACA,8EAAiD;AAoBjD,MAAM,MAAM,GAA4B;IACvC,IAAI,EAAE;QACL,IAAI,EAAE,CAAC;QACP,IAAI,EAAE,iBAAiB;QACvB,aAAa,EAAE,IAAI;QACnB,0BAA0B,EAAE,IAAI;KAChC;IACD,IAAI,EAAE;;;;YAIK,4BAAa,CAAC,MAAM,CAAC,KAAK;;;;;;;;;;;;CAYrC;CACA,CAAC;AAEF,kBAAe,MAAM,CAAC"}

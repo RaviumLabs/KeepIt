@@ -38,7 +38,7 @@ const Details = {
       
       $addField[Server;\`$guildName[$getMessage[$arrayAt[IDs;1];$arrayAt[IDs;2];guildID]]\` (ID: \`$getMessage[$arrayAt[IDs;1];$arrayAt[IDs;2];guildID]\`)]
       $color[${configuration_json_1.default.colors.main}]
-      $footer[© 2025 KeepIt by Striatp • All rights reserved;$userAvatar[$botOwnerID]]
+      $footer[© ${new Date().getFullYear()} KeepIt by Striatp • All rights reserved;$userAvatar[$botOwnerID]]
     ]
   `,
 };

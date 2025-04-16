@@ -24,7 +24,7 @@ import configuration from '@/configuration.json';
  *   - A footer with copyright information and the bot owner's avatar.
  * - Adding an action row with buttons for support and GitHub links.
 */
-const ApplicationCommand: IApplicationCommandData = {
+const Help: IApplicationCommandData = {
 	data: {
 		type: 1,
 		name: 'help',
@@ -48,7 +48,7 @@ const ApplicationCommand: IApplicationCommandData = {
 			$color[${configuration.colors.main}]
 			
 			$c[Add a footer with copyright information and the bot owner's avatar]
-			$footer[© 2025 KeepIt by Striatp • All rights reserved;$userAvatar[$botOwnerID]]
+			$footer[© ${new Date().getFullYear()} KeepIt by Striatp • All rights reserved;$userAvatar[$botOwnerID]]
 
 			$c[Add an action row with buttons for support and GitHub links]
 			$addActionRow
@@ -58,4 +58,4 @@ const ApplicationCommand: IApplicationCommandData = {
 `,
 };
 
-export default ApplicationCommand;
+export default Help;

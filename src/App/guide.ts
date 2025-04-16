@@ -22,7 +22,7 @@ import configuration from '@/configuration.json';
  * - Step-by-step instructions on how to use KeepIt.
  * - Action buttons for accessing the mobile guide, support, and GitHub links.
 */
-const ApplicationCommand: IApplicationCommandData = {
+const Guide: IApplicationCommandData = {
 	data: {
 		type: 1,
 		name: 'guide',
@@ -58,4 +58,4 @@ const ApplicationCommand: IApplicationCommandData = {
 `,
 };
 
-export default ApplicationCommand;
+export default Guide;

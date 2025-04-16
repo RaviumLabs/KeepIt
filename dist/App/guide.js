@@ -4,7 +4,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const configuration_json_1 = __importDefault(require("@/configuration.json"));
-const ApplicationCommand = {
+const Guide = {
     data: {
         type: 1,
         name: 'guide',
@@ -39,5 +39,5 @@ const ApplicationCommand = {
 		]
 `,
 };
-exports.default = ApplicationCommand;
+exports.default = Guide;
 //# sourceMappingURL=guide.js.map

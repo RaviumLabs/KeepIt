@@ -22,7 +22,7 @@ import configuration from '@/configuration.json';
  * - Sending the bookmarked message to the user's DMs with appropriate actions and buttons.
  * - Error handling for unexpected issues.
 */
-const ApplicationCommand: IApplicationCommandData = {
+const Bookmark: IApplicationCommandData = {
   data: {
     type: 3,
     name: 'Bookmark with KeepIt',
@@ -133,4 +133,4 @@ $if[$get[MessageAtt]!=;Attachment(s): $arrayLoad[Attachments;//SEP//;$get[Messag
 `,
 };
 
-export default ApplicationCommand;
+export default Bookmark;
