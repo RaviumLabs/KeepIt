@@ -107,8 +107,8 @@ $if[$get[MessageAtt]!=;Attachment(s): $arrayLoad[Attachments;//SEP//;$get[Messag
             $timestamp[$getMessage[$channelID;$option[message];timestamp]]
             $addActionRow
             $addButton[$get[MessageLink];Jump to message;Link]
-            $addButton[tag;Tags;Secondary;🏷️;true]
-            $addButton[category;Category;Secondary;🗃;true]
+            $addButton[tag;Tags;Secondary;🏷️]
+            $addButton[category;Category;Secondary;🗃]
             $addActionRow
             $addButton[delete;Delete;Danger;🗑️]
             $addButton[details_$channelID_$option[message];Details;Secondary;📄]
