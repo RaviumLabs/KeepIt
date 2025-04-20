@@ -38,35 +38,35 @@ const Bookmark: IApplicationCommandData = {
       $color[${configuration.colors.error}]
     ]]
 
+    $c[Validate if the message exists in the channel]
+    $onlyIf[$messageExists[$channelID;$option[message]]==true;$interactionReply[
+      $ephemeral
+      $description[$crossmark The message you are trying to bookmark does not exist.]
+      $color[${configuration.colors.error}]
+    ]]
+
+    $c[Ensure the bot has the required permissions]
+    $onlyIf[$hasPerms[$guildID;$botID;UseApplicationCommands]==true;$interactionReply[
+      $ephemeral
+      $description[$crossmark I do not have permission to bookmark this message.]
+      $color[${configuration.colors.error}]
+    ]]
+
+    $c[Check if the user's DMs are enabled]
+    $onlyIf[$isUserDMEnabled[$authorID]==true;$interactionReply[
+      $ephemeral
+      $description[$crossmark Failed to bookmark this message, please make sure your DMs are enabled.]
+      $color[${configuration.colors.error}]
+    ]]
+
+    $c[Prevent bookmarking messages from NSFW channels]
+    $onlyIf[$channelNSFW[$channelID]==false;$interactionReply[
+      $ephemeral
+      $description[$crossmark You cannot bookmark a message from a NSFW channel.]
+      $color[${configuration.colors.error}]
+    ]]
+
     $try[
-      $c[Validate if the message exists in the channel]
-      $onlyIf[$messageExists[$channelID;$option[message]]==true;$interactionReply[
-        $ephemeral
-        $description[$crossmark The message you are trying to bookmark does not exist.]
-        $color[${configuration.colors.error}]
-      ]]
-
-      $c[Ensure the bot has the required permissions]
-      $onlyIf[$hasPerms[$guildID;$botID;UseApplicationCommands]==true;$interactionReply[
-        $ephemeral
-        $description[$crossmark I do not have permission to bookmark this message.]
-        $color[${configuration.colors.error}]
-      ]]
-
-      $c[Check if the user's DMs are enabled]
-      $onlyIf[$isUserDMEnabled[$authorID]==true;$interactionReply[
-        $ephemeral
-        $description[$crossmark Failed to bookmark this message, please make sure your DMs are enabled.]
-        $color[${configuration.colors.error}]
-      ]]
-
-      $c[Prevent bookmarking messages from NSFW channels]
-      $onlyIf[$channelNSFW[$channelID]==false;$interactionReply[
-        $ephemeral
-        $description[$crossmark You cannot bookmark a message from a NSFW channel.]
-        $color[${configuration.colors.error}]
-      ]]
-
       $c[Retrieve message details and attachments]
       $let[Message;$getMessage[$channelID;$option[message];content]]
       $let[MessageAtt;$getMessage[$channelID;$option[message];attachments;//SEP//]]
