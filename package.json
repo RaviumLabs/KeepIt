@@ -1,6 +1,6 @@
 {
   "name": "keepit",
-  "version": "0.9.6",
+  "version": "1.0.0",
   "description": "KeepIt is a minimalist Discord bot that lets you bookmark messages with one click. Categorize, tag, and manage saved messages straight from your DMs.",
   "main": "dist/index.js",
   "type": "commonjs",
